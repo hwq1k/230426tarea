@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card {
+            max-width: 700px;
+            border: 0px solid black;
+            border-radius: 1rem;
+            overflow: hidden;
+            padding: 0.3rem 1rem;
+
+            h1 {
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+
+        form {
+            line-height: 1.3rem;
+        }
+
+        fieldset {
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            min-height: 15px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+        }
+
+        input[type="radio"] {
+            margin-left: 12px;
+        }
+
+        input[type="submit"] {
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease-in;
+            transition: background-color 0.3s ease-in;
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="card">
+            <h1>Tarea</h1>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Material Reciclado para envio</legend>
+                    <label for="Nombre">Donante</label>
+                    <input type="text" id="nombre" name="Nombre" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de Material</legend>
+                    <textarea id="material" name="TipoMaterial" rows="4" cols="50">100kg carta&NewLine;100 botellas
+                    </textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de Donante</legend>
+                    <select>
+                        <option value="0">Empresa</option>
+                        <option value="1">Persona Natural</option>
+                        <option value="2">I. Pub.</option>
+                        <option value="3">I. Priv.</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Va a seguir donando?</legend>
+
+                    <input type="radio" id="donante" name="esDonante" required>
+                    <label for="esDonante">SI</label><br>
+                    <input type="radio" id="nodonante" name="esDonante" required>
+                    <label for="esDonante">NO</label><br>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

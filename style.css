@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100vh;
+}
+p,
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    max-width: 300px;
+    border: 0px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 0.3rem 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;   
+    }
+
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.purple {
+    background-color: purple;
+}
